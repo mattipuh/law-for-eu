@@ -34,16 +34,22 @@ Skills work without a Velvoite account (general EU law guidance). With one they 
 
 ## Install
 
+**Step 1 — Clone the repo** (if you haven't already):
 ```bash
-claude plugin install github:Velvoite/eu-legal
+git clone https://github.com/Velvoite/law-for-eu
 ```
 
-Or add to your `.claude/settings.json`:
-```json
-{
-  "plugins": ["github:Velvoite/eu-legal"]
-}
+**Step 2 — Add the marketplace** (in Claude Code or terminal):
+```bash
+claude plugin marketplace add /path/to/law-for-eu
 ```
+
+**Step 3 — Install the plugin:**
+```bash
+claude plugin install eu-legal@velvoite-legal
+```
+
+**Step 4 — Restart Claude Code** (mandatory — close and reopen).
 
 ---
 

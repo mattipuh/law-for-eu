@@ -36,9 +36,22 @@ at sale rather than exercise) has been enacted, and presents rules accordingly.
 
 ## Install
 
+**Step 1 — Clone the repo** (if you haven't already):
 ```bash
-claude plugin install github:Velvoite/fi-startup-legal
+git clone https://github.com/Velvoite/law-for-eu
 ```
+
+**Step 2 — Add the marketplace** (in Claude Code or terminal):
+```bash
+claude plugin marketplace add /path/to/law-for-eu
+```
+
+**Step 3 — Install the plugin:**
+```bash
+claude plugin install fi-startup-legal@velvoite-legal
+```
+
+**Step 4 — Restart Claude Code** (mandatory — close and reopen).
 
 ## Setup
 
