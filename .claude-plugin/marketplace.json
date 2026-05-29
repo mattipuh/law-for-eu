@@ -1,16 +1,27 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "claude-for-legal",
-  "description": "Reference agents, skills, and data connectors for the legal workflows we see most — in-house commercial, privacy, product, corporate, employment, litigation, regulatory, AI governance, IP, and the learning side of the practice (law school clinics and students).",
+  "name": "velvoite-legal",
+  "description": "EU legal and Finnish startup legal plugins by Silly Pilot Oy \u2014 eu-legal and fi-startup-legal.",
   "owner": {
-    "name": "Anthropic"
+    "name": "Silly Pilot Oy",
+    "url": "https://velvoite.eu"
   },
   "plugins": [
     {
       "name": "eu-legal",
       "displayName": "EU Legal",
-      "source": "./eu-legal",
-      "description": "EU legal operations for regulated financial institutions — commercial contracts, privacy/GDPR, AI Act compliance, employment, corporate governance, and regulatory obligations powered by the Velvoite EU finreg corpus. One plugin, one setup, complete EU legal stack.",
+      "source": "./external_plugins/eu-legal",
+      "description": "EU legal operations for regulated financial institutions \u2014 commercial contracts, privacy/GDPR, AI Act compliance, employment, corporate governance, and regulatory obligations powered by the Velvoite EU finreg corpus. One plugin, one setup, complete EU legal stack.",
+      "author": {
+        "name": "Silly Pilot Oy",
+        "url": "https://velvoite.eu"
+      }
+    },
+    {
+      "name": "fi-startup-legal",
+      "displayName": "Finnish Startup Legal",
+      "source": "./fi-startup-legal",
+      "description": "Finnish startup legal toolkit \u2014 OY incorporation, founder agreements, ESOP (TVL \u00a766), SHA review, Business Finland grant compliance, first hires. Backed by live Finlex statute data and PRH company register via Velvoite.",
       "author": {
         "name": "Silly Pilot Oy",
         "url": "https://velvoite.eu"
@@ -83,7 +94,7 @@
       "name": "litigation-legal",
       "displayName": "Litigation Legal",
       "source": "./litigation-legal",
-      "description": "Manages the litigation portfolio — matters, deadlines, holds, demands, outside counsel — and does the work: claim charts (patent and civil), chronologies, depo prep, privilege logs, brief drafting. Adapts to how you work litigation: in-house, firm, or solo.",
+      "description": "Manages the litigation portfolio \u2014 matters, deadlines, holds, demands, outside counsel \u2014 and does the work: claim charts (patent and civil), chronologies, depo prep, privilege logs, brief drafting. Adapts to how you work litigation: in-house, firm, or solo.",
       "author": {
         "name": "Anthropic"
       }
@@ -92,7 +103,7 @@
       "name": "law-student",
       "displayName": "Law Student",
       "source": "./law-student",
-      "description": "Drills Socratically, briefs cases, builds outlines, runs bar prep sessions tuned to your jurisdiction, grades IRAC practice, and plans the study schedule — without ever writing it for you.",
+      "description": "Drills Socratically, briefs cases, builds outlines, runs bar prep sessions tuned to your jurisdiction, grades IRAC practice, and plans the study schedule \u2014 without ever writing it for you.",
       "author": {
         "name": "Anthropic"
       }
@@ -101,7 +112,7 @@
       "name": "legal-clinic",
       "displayName": "Legal Clinic",
       "source": "./legal-clinic",
-      "description": "Sets up the clinic, onboards students, runs structured intake, tracks deadlines with malpractice-aware caution, and hands off cases at semester end — built within ABA Formal Op. 512.",
+      "description": "Sets up the clinic, onboards students, runs structured intake, tracks deadlines with malpractice-aware caution, and hands off cases at semester end \u2014 built within ABA Formal Op. 512.",
       "author": {
         "name": "Anthropic"
       }
@@ -110,7 +121,7 @@
       "name": "legal-builder-hub",
       "displayName": "Legal Builder Hub",
       "source": "./legal-builder-hub",
-      "description": "Finds, evaluates, and installs community legal skills — with a security review gate before anything lands in your environment.",
+      "description": "Finds, evaluates, and installs community legal skills \u2014 with a security review gate before anything lands in your environment.",
       "author": {
         "name": "Anthropic"
       }
