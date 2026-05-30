@@ -20,6 +20,8 @@ argument-hint: "[describe the processing activity or system]"
 
 ## Step 1: Mandatory DPIA trigger check (GDPR Art. 35)
 
+**Live verification:** Call `mcp__velvoite__get_eu_regulation_article("gdpr", "35")` and fetch the section_url to verify the current Art. 35 mandatory DPIA triggers from EUR-Lex before applying the 9-criterion checklist below.
+
 A DPIA is mandatory if the processing is "likely to result in a high risk." Check:
 
 **WP29 / EDPB 9 criteria (2+ criteria = DPIA required):**

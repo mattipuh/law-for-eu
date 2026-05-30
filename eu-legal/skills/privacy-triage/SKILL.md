@@ -36,6 +36,8 @@ Classify: individual / small-scale (< 500 data subjects) / large-scale (EDPB: nu
 
 ## Verdict table
 
+**Live verification:** Call `mcp__velvoite__get_eu_regulation_article("gdpr", "22")` to verify automated decision-making conditions and exceptions from live EUR-Lex text before routing.
+
 | Situation | Verdict |
 |---|---|
 | Special categories + large scale, or automated decisions with legal effects | **DPIA mandatory** — run `/eu-legal:pia-generation` before proceeding |

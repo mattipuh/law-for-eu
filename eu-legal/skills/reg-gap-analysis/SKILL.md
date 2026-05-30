@@ -35,6 +35,8 @@ Confirm: "You want a gap analysis against [regulation]. Is this the current in-f
 
 ## Step 2: Fetch obligations
 
+**Live regulation text:** Before fetching obligations, call `mcp__velvoite__get_eu_regulation_article(regulation_code)` to get the EUR-Lex URL for the regulation being analysed. This allows WebFetch of the actual regulation text to cross-check obligation descriptions against the source. The Velvoite corpus provides obligation intelligence; EUR-Lex provides the verbatim source text.
+
 **If Velvoite available:**
 Call `mcp__velvoite__get_canonical_obligations` with the identified regulation and the actor role from profile. This gives the "what the law requires" input — article-level obligations with enforcement history.
 

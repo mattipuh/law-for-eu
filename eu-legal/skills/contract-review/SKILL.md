@@ -102,10 +102,14 @@ Ask: does this vendor / counterparty process personal data on behalf of the comp
 
 Signals in the contract: reference to "data", "personal data", "data processing", "GDPR", "DPA", "data subjects", customer data, employee data.
 
+**Live verification:** Call `mcp__velvoite__get_eu_regulation_article("gdpr", "28")` to verify current Art. 28 DPA requirements before flagging gaps in the contract.
+
 **If personal data is processed:**
 - Is there a Data Processing Agreement (DPA) or Art. 28 GDPR-compliant data processing clause? If no: 🔴 RED — mandatory for any processor relationship under Art. 28 GDPR. Flag: "No DPA or data processing clause found. GDPR Art. 28 requires a written contract between controller and processor. This agreement cannot proceed to signature without one."
 - If a DPA is referenced by URL ("DPA available at [URL]"), note: "DPA incorporated by reference but not reviewed. Route to `/eu-legal:dpa-review` (if installed) or fetch and review before signing. `[DPA unread — verify]`"
 - Check for cross-border data transfer mechanism if vendor is outside the EEA: Standard Contractual Clauses (Commission Implementing Decision 2021/914/EU, June 2021), adequacy decision, binding corporate rules. If none: 🔴 RED.
+
+**Live verification:** Call `mcp__velvoite__search_eu_regulation_text("standard contractual clauses processor controller", "gdpr")` if module selection is unclear.
 
 **If no personal data is processed:** Note "No DPA required — agreement does not involve personal data processing."
 
