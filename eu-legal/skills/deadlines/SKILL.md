@@ -24,7 +24,7 @@ argument-hint: "[days] [regulation] — e.g. '30' or '60 dora'"
 ## Workflow
 
 Call `mcp__velvoite__get_deadlines` with:
-- `days`: from args
+- `days_ahead`: from args
 - `regulation`: from args if provided
 - `include_overdue`: false
 

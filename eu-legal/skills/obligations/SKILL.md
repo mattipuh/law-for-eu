@@ -38,7 +38,7 @@ From `~/.claude/plugins/config/eu-legal/CLAUDE.md`:
 Call `mcp__velvoite__get_obligation_summary` with `actor_role` from profile for the requested regulation (omit if querying all).
 
 Show a summary table:
-| Regulation | Obligations | Top enforcement area |
+| Regulation | Total obligations | Notes |
 |---|---|---|
 
 ### Step 2: Obligation detail
